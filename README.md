@@ -29,6 +29,50 @@ A CNN built for classifying images of product to their categories (Fashion - Art
     tf.keras.layers.Dense(num_classes, activation='softmax')
     ])
    ```
+   ```
+      Model: "sequential_17"
+   _________________________________________________________________
+    Layer (type)                Output Shape              Param #   
+   =================================================================
+    conv2d_46 (Conv2D)          (None, 251, 251, 64)      6976      
+                                                                    
+    batch_normalization_56 (Ba  (None, 251, 251, 64)      256       
+    tchNormalization)                                               
+                                                                    
+    max_pooling2d_46 (MaxPooli  (None, 125, 125, 64)      0         
+    ng2D)                                                           
+                                                                    
+    conv2d_47 (Conv2D)          (None, 123, 123, 16)      9232      
+                                                                    
+    batch_normalization_57 (Ba  (None, 123, 123, 16)      64        
+    tchNormalization)                                               
+                                                                    
+    max_pooling2d_47 (MaxPooli  (None, 61, 61, 16)        0         
+    ng2D)                                                           
+                                                                    
+    flatten_30 (Flatten)        (None, 59536)             0         
+                                                                    
+    dense_51 (Dense)            (None, 64)                3810368   
+                                                                    
+    batch_normalization_58 (Ba  (None, 64)                256       
+    tchNormalization)                                               
+                                                                    
+    flatten_31 (Flatten)        (None, 64)                0         
+                                                                    
+    dense_52 (Dense)            (None, 16)                1040      
+                                                                    
+    batch_normalization_59 (Ba  (None, 16)                64        
+    tchNormalization)                                               
+                                                                    
+    dense_53 (Dense)            (None, 5)                 85        
+                                                                    
+   =================================================================
+   Total params: 3828341 (14.60 MB)
+   Trainable params: 3828021 (14.60 MB)
+   Non-trainable params: 320 (1.25 KB)
+   _________________________________________________________________
+   ```
+
 ### 4. Train the model
    Then, train the model for 50 Epochs until we reach a validation acuuracy of
    
