@@ -179,10 +179,10 @@ A CNN built for classifying images of product to their categories (Fashion - Art
    ```
 ### 5. Evaluate the model
    When we try the model on test data, it gives an acurracy of almost 1.0
-   ([https://drive.google.com/file/d/1Xp4dKq9b2-VXAdZC627xsSGYoW1pzKzi/view?usp=drive_link])
-   ([https://drive.google.com/file/d/1jK2PqilO2guTv8SKOQuAa7s3SzsdLspd/view?usp=drive_link])
+   ![loss](loss.png)
+   ![accuaracy](accuaracy.png)
    The Confusion Matrix of the model:
-   ([https://drive.google.com/file/d/1qpBh_8lLn15QUO8JNA_eEB9r7NVTE9HV/view?usp=drive_link])
+   ![confusion](confusion.png)
    The Precision, Recall and F1 score are as follows:
    ```
        precision    recall  f1-score   support
