@@ -3,8 +3,8 @@ A CNN built for classifying images of product to their categories (Fashion - Art
 
 ## Steps for building the model:
 ### 1. Collect Data
-   * Collect images for the five categories (Accessories, Artifacts, Fashion, Home, Stationary).
-   * Collect almost 100 image for each category. [Dataset Link](https://drive.google.com/drive/folders/1i9u_fUXgoeycuLAj_00z67_-gpJRKQEP?usp=drive_link)
+   - Collect images for the five categories (Accessories, Artifacts, Fashion, Home, Stationary).
+   - Collect almost 100 image for each category. [Dataset Link](https://drive.google.com/drive/folders/1i9u_fUXgoeycuLAj_00z67_-gpJRKQEP?usp=drive_link)
 ### 2. Preprocess Data
    After collecting the data, we needed to normalize all the pixels values to be value betwwen [0,1] as it fosters stability in the optimization process, promoting faster convergence during gradient-based training.
 ### 3. Build the model architecture
@@ -178,12 +178,12 @@ A CNN built for classifying images of product to their categories (Fashion - Art
    10/10 [==============================] - 9s 720ms/step - loss: 0.0078 - accuracy: 1.0000 - val_loss: 0.0055 - val_accuracy: 1.0000
    ```
 ### 5. Evaluate the model
-   When we try the model on test data, it gives an acurracy of almost 1.0
+   - When we try the model on test data, it gives an acurracy of almost 1.0
    ![loss](loss.png)
-   ![accuaracy](accuaracy.png)
-   The Confusion Matrix of the model:
-   ![confusion](confusion.png)
-   The Precision, Recall and F1 score are as follows:
+   ![accuracy](accuracy.png)
+   ![confusion](confusion.png "Confusion Matrix")
+   ---
+   - The Precision, Recall and F1 score are as follows:
    ```
        precision    recall  f1-score   support
    
