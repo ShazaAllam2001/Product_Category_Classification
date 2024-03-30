@@ -3,8 +3,8 @@ A CNN built for classifying images of product to their categories (Fashion - Art
 
 ## Steps for building the model:
 ### 1. Collect Data
-   Collect images for the five categories (Accessories, Artifacts, Fashion, Home, Stationary).
-   Collect almost 100 image for each category
+   * Collect images for the five categories (Accessories, Artifacts, Fashion, Home, Stationary).
+   * Collect almost 100 image for each category. [Dataset Link](https://drive.google.com/drive/folders/1i9u_fUXgoeycuLAj_00z67_-gpJRKQEP?usp=drive_link)
 ### 2. Preprocess Data
    After collecting the data, we needed to normalize all the pixels values to be value betwwen [0,1] as it fosters stability in the optimization process, promoting faster convergence during gradient-based training.
 ### 3. Build the model architecture
