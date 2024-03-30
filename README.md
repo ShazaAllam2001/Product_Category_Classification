@@ -2,12 +2,12 @@
 A CNN built for classifying images of product to their categories (Fashion - Artifacts - .....)
 
 ## Steps for building the model:
-1. Collect Data
+### 1. Collect Data
    Collect images for the five categories (Accessories, Artifacts, Fashion, Home, Stationary).
    Collect almost 100 image for each category
-3. Preprocess Data
+### 2. Preprocess Data
    After collecting the data, we needed to normalize all the pixels values to be value betwwen [0,1] as it fosters stability in the optimization process, promoting faster convergence during gradient-based training.
-5. Build the model architecture
+### 3. Build the model architecture
    We build the CNN needed for the model as follows:
    ```
    model = tf.keras.models.Sequential([
@@ -29,10 +29,10 @@ A CNN built for classifying images of product to their categories (Fashion - Art
     tf.keras.layers.Dense(num_classes, activation='softmax')
     ])
    ```
-7. Train the model
+### 4. Train the model
    Then, train the model for 50 Epochs until we reach a validation acuuracy of
    
-9. Evaluate the model
+### 5. Evaluate the model
    When we try the model on test data, it gives an acurracy of
    The Confusion Matrix of the model:
    
